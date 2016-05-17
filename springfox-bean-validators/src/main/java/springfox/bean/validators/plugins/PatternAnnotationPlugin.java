@@ -24,7 +24,6 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.core.annotation.Order;
 import org.springframework.stereotype.Component;
-import springfox.bean.validators.configuration.BeanValidatorPluginsConfiguration;
 import springfox.documentation.service.AllowablePatternValues;
 import springfox.documentation.service.AllowableValues;
 import springfox.documentation.spi.DocumentationType;
@@ -42,7 +41,7 @@ import static springfox.bean.validators.plugins.BeanValidators.*;
  * getter/setter then the current handler will <b>always</b>
  * the result of {@link springfox.bean.validators.plugins.SizeAnnotationPlugin}.
  * This is implemented through order annotation. It has +1 priority than all other plugins defined in
- * {@link BeanValidatorPluginsConfiguration}. The behavior above can be examined in groovy unit test
+ * {@link springfox.bean.validators.configuration.BeanValidatorPluginsConfiguration}. The behavior above can be examined in groovy unit test
  * {@link springfox.bean.validators.plugins.PatternAnnotationPluginSpec}
  *
  */
